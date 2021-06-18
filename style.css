@@ -1,0 +1,45 @@
+#container {
+    display: flex;
+    /*1024 is the standard*/
+    width: 1024px;
+    margin: auto;
+    background-color: gray;
+    height: 500px;
+}
+
+.flex-container {
+    /* creates the layout context adjusting automatic*/
+    display: flex;
+    flex-flow: row;
+    /*To adjust if the contenc will be in on line or next*/
+    flex-flow: wrap;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.flex-item {
+    background-color: tomato;
+    padding: 5px;
+    margin-top: 10px;
+    width: 200px;
+    height: 150px;
+    /*text height*/
+    line-height: 150px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    /*Just to makes the div bigger*/
+    flex-grow: 1;
+    /*Advjust the size to shrink*/
+    flex-shrink: 2;
+    border: solid 2px black;
+}
+
+#box4 {
+    background-color: lime;
+    flex-grow: 2;
+    flex-shrink: 0;
+}
